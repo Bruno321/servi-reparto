@@ -1,10 +1,18 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { NavigationContext } from "../../Context/NavigationContext";
+
+import {Header} from '../../Components/Header'
+
 import './index.css'
 
 export const MainScreen = () => {
+
+    const { screen } = useContext(NavigationContext);
+
     return (
-        <View>
-            MainScreen
-        </View>
+        <div>
+            <Header/>
+            <RenderManager screen={screen}/>
+        </div>
     )
 }

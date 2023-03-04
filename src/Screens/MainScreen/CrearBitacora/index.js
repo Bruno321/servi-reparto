@@ -1,10 +1,11 @@
 import React from 'react'
+
 import './index.css'
 
-export const NotFound = () => {
+export const CrearBitacora = () => {
     return (
         <div>
-            NotFound
+            CrearBitacora
         </div>
     )
 }

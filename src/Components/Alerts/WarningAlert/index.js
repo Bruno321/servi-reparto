@@ -3,8 +3,8 @@ import './index.css'
 
 export const WarningAlert = () => {
     return (
-        <View>
+        <div>
             WarningAlert
-        </View>
+        </div>
     )
 }

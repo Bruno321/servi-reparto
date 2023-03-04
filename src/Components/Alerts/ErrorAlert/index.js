@@ -3,8 +3,8 @@ import './index.css'
 
 export const ErrorAlert = () => {
     return (
-        <View>
+        <div>
             ErrorAlert
-        </View>
+        </div>
     )
 }

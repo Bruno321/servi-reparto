@@ -1,10 +1,15 @@
 import React from 'react'
 import './index.css'
 
-export const ListHeader = () => {
+export const ListHeader = ({data}) => {
     return (
-        <View>
-            ListHeader
-        </View>
+        <div>
+            {data.forEach(element => {
+                return(
+                    <p>{element}</p>
+                )
+            })}
+            <div></div>
+        </div>
     )
 }

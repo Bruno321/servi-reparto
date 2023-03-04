@@ -3,8 +3,8 @@ import './index.css'
 
 export const Button = () => {
     return (
-        <View>
+        <div>
             Button
-        </View>
+        </div>
     )
 }

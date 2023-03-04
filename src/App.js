@@ -5,9 +5,9 @@ import { LoginContext } from "./Context/LoginContext";
 import {Router, Redirect} from '@reach/router'
 
 // Screens
-import MainScreen from "./Screens/MainScreen"
-import NotFound from "./Screens/NotFound"
-import Login from "./Screens/Login";
+import {MainScreen} from "./Screens/MainScreen"
+import {NotFound} from "./Screens/NotFound"
+import {Login} from "./Screens/Login";
 
 
 export const App = () => {

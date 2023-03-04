@@ -3,8 +3,8 @@ import './index.css'
 
 export const Form = () => {
     return (
-        <View>
+        <div>
             Form
-        </View>
+        </div>
     )
 }

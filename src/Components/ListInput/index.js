@@ -3,8 +3,8 @@ import './index.css'
 
 export const ListInput = () => {
     return (
-        <View>
+        <div>
             ListInput
-        </View>
+        </div>
     )
 }
