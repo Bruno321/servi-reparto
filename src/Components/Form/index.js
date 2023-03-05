@@ -1,10 +1,42 @@
 import React from 'react'
+
+import { WarningAlert } from '../Alerts/WarningAlert'
+import { FormInput } from '../FormInput'
+import { FormInputSelect } from '../FormInputSelect'
+
 import './index.css'
 
-export const Form = () => {
+export const Form = ({data,values,setValue}) => {
+
     return (
-        <div>
-            Form
+        <div className='form'>
+            <div className='form-title'>{data.title}</div>
+            <WarningAlert/>
+            <div className='form-iputs-container'>
+                {data.inputs.map((element,i)=>{
+                    if(element.inputType==="select"){
+                        return (
+                            <FormInputSelect 
+                                data={element} 
+                                value={values[i]} 
+                                setValue={setValue}
+                                index={i}
+                                key={i}
+                            />
+                        ) 
+                    } else if(element.inputType==="text"){
+                        return (
+                            <FormInput 
+                                data={element} 
+                                value={values[i]} 
+                                setValue={setValue}
+                                index={i}
+                                key={i}
+                            />
+                        )
+                    }
+                })}
+            </div>
         </div>
     )
 }

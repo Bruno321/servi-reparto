@@ -1,8 +1,8 @@
 export const dashBoardTitles = [
-    "Guía",
-    "Origen",
-    "Destino",
-    "Fecha de salida",
-    "Estatus",
-    "Reporte",
+    {title:"Guía",weight:1},
+    {title:"Origen",weight:3},
+    {title:"Destino",weight:3},
+    {title:"Fecha de salida",weight:1},
+    {title:"Estatus",weight:1},
+    {title:"Reporte",weight:1},
 ]

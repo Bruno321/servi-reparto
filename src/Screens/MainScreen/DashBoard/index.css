@@ -1,0 +1,61 @@
+.dashboard{
+    background-color: #F8F4F4;
+    padding: 20px;
+    height: 90vh;
+}
+.dashboard-filter-container{
+    display: flex;
+    height: 5vh;
+    padding: 10px;
+}
+.dashboard-filter-container>div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dashboard-guia-filter{
+    flex:1;
+    /* background-color: orange; */
+}
+.dashboard-guia-filter>p{
+    font-size: 1.3em;
+    color: black;
+}
+.dashboard-guia-filter>input{
+    height: 3vh;
+    width: 10vw;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: #8D8B8A;
+    outline: none;
+    border:1px solid black; 
+    border-radius: 10px;
+    padding: 3px;
+}
+.search-button{
+    height: 4vh;
+    width: 10vw;
+    background-color: #136A9B;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-fecha-filter{
+    flex: 2;
+    /* background-color: yellow; */
+
+}
+.dashboard-fecha-filter>input{
+    height: 3vh;
+    width: 7vw;
+}
+.dashboard-fecha-filter>p{
+    font-size: 1.3em;
+    color: black;
+}
+.dashboard-card-container{
+    overflow: scroll;
+    height: 72vh;
+}

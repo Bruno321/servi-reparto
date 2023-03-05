@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import { NavigationContext } from "../../Context/NavigationContext";
 
 import {Header} from '../../Components/Header'
+import {RenderManager} from './RenderManager'
 
 import './index.css'
 

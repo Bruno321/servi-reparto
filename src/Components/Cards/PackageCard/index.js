@@ -3,17 +3,25 @@ import './index.css'
 
 export const PackageCard = ({data}) => {
     return (
-        <div>
-            <p>{data.guia}</p>
-            <p>{data.origen}</p>
-            <p>{data.destino}</p>
-            <p>{data.fechaSalida}</p>
-            <p>{data.estatus}</p>
-            {
-                data.estatus==="Entregado" ?
-                    <img alt={"ReporteClickeable"}/> : 
-                    <img alt={"ReporteNoClickeable"}/>
-            }
+        <div className='packageCard'>
+            <p style={{flex:"1"}}>{data.counter}</p>
+            <p style={{flex:"3"}}>{data.origin}</p>
+            <p style={{flex:"3"}}>{data.destiny}</p>
+            <p style={{flex:"1"}}>{data.exitDate}</p>
+            <p style={{flex:"1"}}>{data.status===0? "Entregado":"En proceso"}</p>
+            <div style={{flex:"1"}} >
+                {
+                    data.status===0 ?
+                        <img
+                            src={require('../../../Assets/Icons/pdf_clickeable.svg')} 
+                            alt={"ReporteClickeable"}
+                            /> : 
+                        <img
+                            src={require('../../../Assets/Icons/pdf_no_clickeable.svg')} 
+                            alt={"ReporteNoClickeable"}
+                            />
+                }
+            </div>
         </div>
     )
 }

@@ -1,0 +1,60 @@
+.capturarCarga{
+    background-color: #F8F4F4;
+    padding: 20px;
+    height: 90vh;
+    overflow: scroll;
+}
+.separator-load{
+    height: 0.5vh;
+    margin-top: 50px;
+}
+.green{
+    background-color: #578E55 ;
+}
+.orange{
+    background-color: orange ;
+}
+.list-form{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.list-form>div{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.list-form>div>input{
+    font-size: 1.2em;
+    margin-top: 10px;
+    width: 14vw;
+    height: 3.5vh;
+    padding: 10px;
+}
+.list-form-select{
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.add-button-container{
+    padding: 20px;
+    display: flex;
+}
+.generate-guide{
+    height: 8vh;
+    width: 20vw;
+    background-color: #136A9B;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+.generate-guide-button-container{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}

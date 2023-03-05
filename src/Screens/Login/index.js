@@ -18,7 +18,9 @@ export const Login = () => {
 
     return (
         <div className="login">
+
             <div className="login-container">
+
                 <div className="login-title">
                     <p>Inicio de sesión</p>
                     <div></div>
@@ -26,18 +28,18 @@ export const Login = () => {
 
                 <div className="login-inputs">
                     <input 
-                        placeholder={"Usuario"} 
-                        type={"text"} 
+                        placeholder="Usuario" 
+                        type="text" 
                         value={form.user} 
-                        onChangue={(e)=>setForm({...form,user:e.target.value})}/>
+                        onChange={(e)=>setForm({...form,user:e.target.value})}/>
                     <input 
-                        placeholder={"Contraseña"} 
-                        type={"password"} 
+                        placeholder="Contraseña"
+                        type="password" 
                         value={form.password} 
-                        onChangue={(e)=>setForm({...form,password:e.target.value})}/>
+                        onChange={(e)=>setForm({...form,password:e.target.value})}/>
                 </div>
 
-                <div className="login-input" onClick={handleClick}>
+                <div className="login-input button" onClick={handleClick}>
                     <p>Continuar</p>
                 </div>
             </div>

@@ -3,13 +3,15 @@ import './index.css'
 
 export const ListHeader = ({data}) => {
     return (
-        <div>
-            {data.forEach(element => {
-                return(
-                    <p>{element}</p>
-                )
-            })}
-            <div></div>
+        <div className='listHeader'>
+            <div className='listHeader-container'>
+                {data.map(element => {
+                    return(
+                        <p key={element.title} style={{flex:`${element.weight}`}} >{element.title}</p>
+                    )
+                })}
+            </div>
+            <div className='separator'></div>
         </div>
     )
 }

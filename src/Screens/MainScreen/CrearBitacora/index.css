@@ -1,0 +1,10 @@
+.CrearBitacora{
+    background-color: #F8F4F4;
+    padding: 20px;
+    height: 90vh;
+}
+
+.form-bitacoras{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

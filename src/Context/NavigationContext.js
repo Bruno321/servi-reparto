@@ -3,7 +3,7 @@ import React, {createContext, useState} from "react";
 export const NavigationContext = createContext();
 
 const Provider = ({children})=>{
-    const [screen, setScreen] = useState(0);
+    const [screen, setScreen] = useState(2);
     const [itemId,setItemId] = useState()
     return(
       <NavigationContext.Provider value ={{
